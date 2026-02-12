@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:#f0f4f3;
+      color:#0b1220;
+      padding:0px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:1080px;
+      background:#fff;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      text-align:center;
+      padding:20px;
+    }
+
+    
+
+    .logo{
+      width:90px;
+      height:90px;
+      border-radius:16px;
+      background:#e9f6ff;
+      margin:0 auto 14px;
+      overflow:hidden;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .heading h1{
+      font-size:20px;
+      font-weight:700;
+      line-height:1.3;
+      margin-bottom:6px;
+    }
+    .accent{color:#0aa3ff;}
+
+    .sub-title{
+      color:#0b6b2e;
+      font-weight:700;
+      margin-bottom:6px;
+    }
+
+    .stats{
+      margin-bottom:12px;
+      color:#444;
+      font-weight:600;
+    }
+
+    .desc{
+      padding:10px;
+      font-size:14px;
+      margin-bottom:16px;
+      color:#333;
+    }
+    .desc small{color:#777;}
+
+    .btn-telegram{
+      background:linear-gradient(180deg,#0b7b2b,#045d1f);
+      color:#fff;
+      padding:14px 32px;
+      border-radius:40px;
+      font-weight:800;
+      font-size:18px;
+      text-decoration:none;
+      display:inline-block;
+      animation:pulseBtn 2s infinite ease-in-out;
+      box-shadow:0 0 20px rgba(11,123,43,0.4);
+      margin-bottom:14px;
+    }
+
+    @keyframes pulseBtn{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.05)}
+      100%{transform:scale(1)}
+    }
+
+    .timer-row{
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      margin-bottom:14px;
+    }
+    .timer-pill{
+      background:#e6f5ff;
+      padding:8px 14px;
+      border-radius:20px;
+      font-weight:700;
+    }
+
+    .note{
+      font-size:14px;
+      color:#333;
+      margin-bottom:10px;
+    }
+
+    .footer-links{
+      margin-top:20px;
+      font-size:13px;
+      line-height:1.7;
+    }
+    .footer-links a{
+      color:#0a84ff;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .fb-disclaimer{
+      font-size:12px;
+      color:#777;
+      margin-top:20px;
+      line-height:1.5;
+    }
+  </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2025507254964641');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2025507254964641&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  
+</head>
+  
+
+<body>
+
+<div class="wrap">
+
+  
+
+  <div class="logo">
+    <img src="mmf.jpg" alt="Logo">
+  </div>
+
+  <div class="heading">
+    <h1>Learn how to Trade with <span class="accent">The MONEY MAGNET FOREX Experts</span></h1>
+  </div>
+
+  <div class="sub-title">Unlock the Secrets to Crypto & Forex Success</div>
+  <div class="stats">15,055 Subscribers</div>
+
+  <div class="desc">
+    The Best Crypto and Forex Signals For Educational Use Only.<br>
+    <small>No financial advice • Market risk involved</small>
+  </div>
+
+  <!-- ✅ BUTTON → redirect.html -->
+  <a class="btn-telegram" href="https://telegram.me/+yo_UhzrmcKhmOTA1" target="_blank">
+    View In Telegram
+  </a>
+
+  <div class="timer-row">
+    <div class="timer-pill" id="minutes">10 Min</div>
+    <div class="timer-pill" id="seconds">00 Sec</div>
+  </div>
+
+  <div class="note">
+    If you have <b>Telegram</b>, you can join instantly
+  </div>
+
+  <div class="footer-links">
+    Ads Maintained By
+    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank">Digital Ads Expert</a><br><br>
+    <a href="https://ElitePips.online/privacy" target="_blank">Privacy Policy</a> •
+    <a href="https://ElitePips.online/disclaimer" target="_blank">Disclaimer</a> •
+    <a href="https://ElitePips.online/terms" target="_blank">Terms</a>
+  </div>
+
+  <div class="fb-disclaimer">
+    This site is not a part of the Facebook™ website or Facebook Inc.
+    This site is NOT endorsed by Facebook™ in any way.
+  </div>
+
+</div>
+
+<script>
+let remaining = 10 * 60;
+const m = document.getElementById("minutes");
+const s = document.getElementById("seconds");
+
+function updateTimer(){
+  if(remaining <= 0) return;
+  const min = Math.floor(remaining / 60);
+  const sec = remaining % 60;
+  m.textContent = (min < 10 ? "0"+min : min) + " Min";
+  s.textContent = (sec < 10 ? "0"+sec : sec) + " Sec";
+  remaining--;
+}
+updateTimer();
+setInterval(updateTimer, 1000);
+</script>
+
+</body>
+</html>
